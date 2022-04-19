@@ -1,0 +1,205 @@
+.Main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.paraDiv {
+    font-size: 20px;
+    color: #070708;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-right: 50px;
+    margin-left: 50px;
+
+
+}
+
+.Button {
+    background-color: #5792ff;
+    border: 1px solid #ddd;
+    color: rgb(255, 251, 251);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 200px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.tictacMain {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tictacSubDiv {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ticTacButton {
+    background-color: #5792ff;
+    border: 1px solid #ddd;
+    color: rgb(255, 251, 251);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 200px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+.app-header {
+    display: flex;
+    min-height: 80vh;
+    flex-direction: column;
+    text-align: center;
+    background-color: #ffffff;
+    color: rgb(8, 1, 1);
+    justify-content: center;
+    align-items: center;
+}
+
+.header-text {
+    color: rgb(248, 42, 42);
+    font-size: 32px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.heading-text {
+    color: rgb(20, 17, 17);
+    font-size: 32px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.Board {
+    width: 450px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.Board-Square {
+    border: 1px solid #8cb2fa;
+    border-radius: 5px;
+    color: rgb(0, 45, 245);
+    background-color: #8cb2fa;
+}
+
+.Board-Square:hover {
+    background-color: #4486ff;
+}
+
+.square {
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+    min-width: 10vw;
+    min-height: 100px;
+    font-size: 2rem;
+    outline: none;
+}
+
+.InputContainer {
+    display: flex;
+}
+
+.PlayersParagraph {
+    font-size: 25px;
+    color: #3838b6;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.clear-button {
+    cursor: pointer;
+    width: max-content;
+    margin: 40px auto 10px auto;
+    padding: 10px;
+    border: 1px solid rgb(29, 99, 228);
+    border-radius: 5px;
+    background-color: #45b2fa;
+    font-weight: bolder;
+}
+
+@media only screen and (max-width: 600px) {
+    .heading-text {
+        color: white;
+        font-size: 30px;
+        font-weight: bolder;
+        text-align: center;
+        margin: 60px 10px;
+    }
+
+    .square {
+        width: 100%;
+        height: 100%;
+        max-width: 400px;
+        min-width: 10vw;
+        min-height: 110px;
+        background: #fff;
+        font-size: 2rem;
+        outline: none;
+    }
+
+    .Board {
+        width: 450px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .Board-Square {
+        border: 1px solid rgb(231, 37, 37);
+        border-radius: 5px;
+        color: red;
+    }
+
+    .clear-button {
+        width: max-content;
+        margin: 40px auto 10px auto;
+    }
+}
